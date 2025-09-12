@@ -45,7 +45,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 🎯 Roadmap
 
 - [x] Create basic landing page
-- [ ] Add user registration
-- [ ] Implement skill browsing
+- [x] Add demo website
+- [x] Integrate UI/UX
 - [ ] Add messaging system
 - [ ] Mobile app development
