@@ -14,7 +14,7 @@ SkillSwap is a community-driven platform where people can share their skills and
 
 ## 🚀 Live Demo
 
-Visit our landing page: [SkillSwap Demo](https://github.com/raamcoder-11/skillswap-platform)
+Visit our landing page: [SkillSwap Demo](https://raamcoder-11.github.io/skillswap-platform/)
 
 ## 🛠️ Built With
 
