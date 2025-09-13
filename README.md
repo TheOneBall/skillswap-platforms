@@ -4,6 +4,9 @@
 
 SkillSwap is a community-driven platform where people can share their skills and learn new ones from others. Whether you want to learn guitar, teach cooking, or exchange language lessons - SkillSwap connects learners and teachers.
 
+[![GitHub release](https://img.shields.io/github/release/raamcoder-11/skillswap-platform.svg)](https://github.com/raamcoder-11/skillswap-platform/releases)
+
+
 ## 🌟 Features (Coming Soon)
 
 - 📚 Browse skills by category
@@ -45,7 +48,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 🎯 Roadmap
 
 - [x] Create basic landing page
-- [ ] Add user registration
-- [ ] Implement skill browsing
+- [x] Add demo website
+- [x] Integrate UI/UX
 - [ ] Add messaging system
 - [ ] Mobile app development
