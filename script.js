@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add some interactivity to skill items
+    // Add some interactivity to skill item
     const skillItems = document.querySelectorAll('.skill-item');
     
     skillItems.forEach(item => {
