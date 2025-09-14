@@ -4,7 +4,7 @@
 
 SkillSwap is a community-driven platform where people can share their skills and learn new ones from others. Whether you want to learn guitar, teach cooking, or exchange language lessons - SkillSwap connects learners and teachers.
 
-[![GitHub release](https://img.shields.io/github/release/raamcoder-11/skillswap-platform.svg)](https://github.com/raamcoder-11/skillswap-platform/releases)
+[![GitHub release](https://img.shields.io/github/release/raamcoder-11/skillswap-platform.svg)](https://github.com/TheOneBall/skillswap-platforms/releases)
 
 
 ## 🌟 Features (Coming Soon)
@@ -17,7 +17,7 @@ SkillSwap is a community-driven platform where people can share their skills and
 
 ## 🚀 Live Demo
 
-Visit our landing page: [SkillSwap Official](https://raamcoder-11.github.io/skillswap-platform/)
+Visit our landing page: [SkillSwap Official](https://TheOneBall.github.io/skillswap-platforms/)
 
 ## 🛠️ Built With
 
@@ -29,7 +29,7 @@ Visit our landing page: [SkillSwap Official](https://raamcoder-11.github.io/skil
 ## 📖 How to Run Locally
 
 1. Clone this repository
-   [git clone](https://github.com/raamcoder-11/skillswap-platform)
+   [git clone](https://github.com/TheOneBall/skillswap-platforms)
    
 2. Open `index.html` in your browser
 
