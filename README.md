@@ -4,7 +4,7 @@
 
 SkillSwap is a community-driven platform where people can share their skills and learn new ones from others. Whether you want to learn guitar, teach cooking, or exchange language lessons - SkillSwap connects learners and teachers.
 
-[![GitHub release](https://img.shields.io/github/release/raamcoder-11/skillswap-platform.svg)](https://github.com/TheOneBall/skillswap-platforms/releases)
+[![GitHub release](https://img.shields.io/github/release/TheOneBall/skillswap-platforms.svg)](https://github.com/TheOneBall/skillswap-platforms/releases)
 
 
 ## 🌟 Features (Coming Soon)
