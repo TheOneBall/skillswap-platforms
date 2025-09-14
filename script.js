@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(`💡 Suggested skill to learn today: ${randomSkill}`);
     }
     
-    // Show random skill suggestion every 10 seconds
+ // Show random skill suggestion every 10 seconds
     setInterval(showRandomSkill, 10000);
     showRandomSkill(); // Show one immediately
 });
