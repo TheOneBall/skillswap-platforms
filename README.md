@@ -1,16 +1,16 @@
 # 🎓 SkillWrap - Peer-to-Peer Learning Platform
 
-[![GitHub release](https://img.shields.io/github/release/TheOneBall/skillwrap-platforms.svg)](https://github.com/TheOneBall/skillwrap-platforms/releases)
+[![GitHub release](https://img.shields.io/github/release/TheOneBall/skillswap-platforms.svg)](https://github.com/TheOneBall/skillswap-platforms/releases)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-brightgreen)](https://theoneball.github.io/skillwrap-platforms/)
+[![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-brightgreen)](https://theoneball.github.io/skillswap-platforms/)
 
 **Learn anything, teach everything!**
 
 SkillWrap is a community-driven platform where people can share their skills and learn new ones from others. Whether you want to learn guitar, teach cooking, or exchange language lessons - SkillWrap connects learners and teachers in every community.
 
-![Demo Preview](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=SkillWrap+Landing+Page)
+![Demo Preview](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=Skillswap+Landing+Page)
 
 ## ✨ Features
 
@@ -34,7 +34,7 @@ SkillWrap is a community-driven platform where people can share their skills and
 
 ## 🚀 Live Demo
 
-**[🌐 View Live Site](https://TheOneBall.github.io/skillwrap-platforms/)**
+**[🌐 View Live Site](https://TheOneBall.github.io/skillswap-platforms/)**
 
 Experience the full interactive landing page with animations, responsive design, and FAQ section!
 
