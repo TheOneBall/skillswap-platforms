@@ -569,6 +569,137 @@ showNotification(type, title, message) {
         
         console.log('⚠️ Showing fallback skills due to loading error');
     }
+        // Add these methods at the end of the class, before the closing }
+    
+    openAdminPanel() {
+        const adminPanel = document.getElementById('admin-panel');
+        if (!adminPanel) return;
+        
+        this.loadAdminData();
+        adminPanel.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    closeAdminPanel() {
+        const adminPanel = document.getElementById('admin-panel');
+        if (adminPanel) {
+            adminPanel.style.display = 'none';
+        }
+        document.body.style.overflow = '';
+    }
+    
+    loadAdminData() {
+        try {
+            const interests = JSON.parse(localStorage.getItem('skillswap-interests') || '[]');
+            const contacts = JSON.parse(localStorage.getItem('skillswap-contacts') || '[]');
+            
+            const display = document.getElementById('interests-display');
+            if (!display) return;
+            
+            if (interests.length === 0) {
+                display.innerHTML = '<p>No interests recorded yet.</p>';
+                return;
+            }
+            
+            // Group by skills
+            const groupedData = {};
+            interests.forEach(interest => {
+                if (!groupedData[interest.skillId]) {
+                    groupedData[interest.skillId] = {
+                        skillName: interest.skillName,
+                        mentorName: interest.mentorName,
+                        interests: []
+                    };
+                }
+                groupedData[interest.skillId].interests.push(interest);
+            });
+            
+            let html = `<h4>📝 Collected Interests (${interests.length} total)</h4>`;
+            
+            Object.keys(groupedData).forEach(skillId => {
+                const skill = groupedData[skillId];
+                html += `
+                    <div class="skill-interests">
+                        <h5>${skill.skillName} (${skill.interests.length} interested)</h5>
+                        <p>Mentor: ${skill.mentorName}</p>
+                        <div class="interests-list">
+                `;
+                
+                skill.interests.forEach(interest => {
+                    html += `
+                        <div class="interest-item">
+                            <strong>${interest.name}</strong> - ${interest.email}
+                            <br><small>Experience: ${interest.experience} | ${new Date(interest.timestamp).toLocaleDateString()}</small>
+                            ${interest.message ? `<br><em>"${interest.message}"</em>` : ''}
+                        </div>
+                    `;
+                });
+                
+                html += `</div></div>`;
+            });
+            
+            html += `
+                <div class="admin-actions">
+                    <button class="btn btn-primary" onclick="skillModalSystem.exportData()">
+                        📄 Export Data
+                    </button>
+                    <button class="btn btn-secondary" onclick="skillModalSystem.clearData()">
+                        🗑️ Clear All Data
+                    </button>
+                </div>
+            `;
+            
+            display.innerHTML = html;
+            
+        } catch (error) {
+            console.error('Error loading admin data:', error);
+        }
+    }
+    
+    exportData() {
+        try {
+            const interests = JSON.parse(localStorage.getItem('skillswap-interests') || '[]');
+            const contacts = JSON.parse(localStorage.getItem('skillswap-contacts') || '[]');
+            
+            const data = {
+                interests: interests,
+                contacts: contacts,
+                exportDate: new Date().toISOString(),
+                summary: {
+                    totalInterests: interests.length,
+                    totalContacts: contacts.length,
+                    skillsWithInterests: [...new Set(interests.map(i => i.skillId))].length
+                }
+            };
+            
+            const dataStr = JSON.stringify(data, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(dataBlob);
+            a.download = `skillswap-data-${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            
+            this.showSuccess('Data exported successfully!', 'Check your downloads folder.');
+            
+        } catch (error) {
+            console.error('Export error:', error);
+            this.showError('Failed to export data.');
+        }
+    }
+    
+    clearData() {
+        if (confirm('Are you sure you want to clear all stored data? This cannot be undone.')) {
+            localStorage.removeItem('skillswap-interests');
+            localStorage.removeItem('skillswap-interests-summary');
+            localStorage.removeItem('skillswap-contacts');
+            
+            this.showSuccess('All data cleared successfully!');
+            this.loadAdminData();
+        }
+    }
+}
+
 }
 
 // Initialize when DOM is ready
