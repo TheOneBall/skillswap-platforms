@@ -1,0 +1,112 @@
+{
+  "skills": [
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "icon": "fas fa-code",
+      "timing": "Evenings (6-8 PM)",
+      "maxStrength": 8,
+      "whoCanJoin": "Beginners to intermediate level",
+      "mentor": {
+        "name": "Alex Thompson",
+        "contact": "alex.dev@skillswap.com",
+        "avatar": "https://via.placeholder.com/60x60/4F46E5/FFFFFF?text=AT"
+      },
+      "frequency": "3 sessions per week",
+      "description": "Learn modern web development with HTML5, CSS3, JavaScript, and responsive design. Build real projects including responsive websites, interactive web apps, and deploy them to the internet. Perfect for career changers and students.",
+      "category": "Programming",
+      "difficulty": "Beginner-Friendly",
+      "duration": "8 weeks"
+    },
+    {
+      "id": "guitar-lessons",
+      "name": "Guitar Lessons",
+      "icon": "fas fa-guitar",
+      "timing": "Weekends (10 AM - 12 PM)",
+      "maxStrength": 6,
+      "whoCanJoin": "All skill levels welcome",
+      "mentor": {
+        "name": "Maria Rodriguez",
+        "contact": "maria.music@skillswap.com",
+        "avatar": "https://via.placeholder.com/60x60/E53E3E/FFFFFF?text=MR"
+      },
+      "frequency": "2 sessions per week",
+      "description": "Master the guitar from basics to advanced techniques. Learn chord progressions, strumming patterns, fingerpicking, and your favorite songs. Acoustic and electric guitar instruction available.",
+      "category": "Music",
+      "difficulty": "All Levels",
+      "duration": "12 weeks"
+    },
+    {
+      "id": "cooking-classes",
+      "name": "Cooking Classes",
+      "icon": "fas fa-utensils",
+      "timing": "Saturday mornings (9-11 AM)",
+      "maxStrength": 10,
+      "whoCanJoin": "Food enthusiasts, any experience level",
+      "mentor": {
+        "name": "Chef David Kim",
+        "contact": "chef.david@skillswap.com",
+        "avatar": "https://via.placeholder.com/60x60/38A169/FFFFFF?text=DK"
+      },
+      "frequency": "Weekly sessions",
+      "description": "Discover the joy of cooking with hands-on classes covering international cuisines, knife skills, meal planning, and presentation. Learn to create delicious, healthy meals from scratch.",
+      "category": "Culinary",
+      "difficulty": "Beginner-Friendly",
+      "duration": "6 weeks"
+    },
+    {
+      "id": "language-exchange",
+      "name": "Language Exchange",
+      "icon": "fas fa-language",
+      "timing": "Flexible scheduling",
+      "maxStrength": 4,
+      "whoCanJoin": "Native or fluent speakers",
+      "mentor": {
+        "name": "Emma Chen",
+        "contact": "emma.languages@skillswap.com",
+        "avatar": "https://via.placeholder.com/60x60/9F7AEA/FFFFFF?text=EC"
+      },
+      "frequency": "2-3 sessions per week",
+      "description": "Practice conversational skills in English, Spanish, and Mandarin through structured language exchange. Improve pronunciation, grammar, and cultural understanding in a supportive environment.",
+      "category": "Languages",
+      "difficulty": "Intermediate+",
+      "duration": "Ongoing"
+    },
+    {
+      "id": "photography",
+      "name": "Photography",
+      "icon": "fas fa-camera",
+      "timing": "Sundays (2-5 PM)",
+      "maxStrength": 8,
+      "whoCanJoin": "Camera owners (any type)",
+      "mentor": {
+        "name": "Jake Wilson",
+        "contact": "jake.photo@skillswap.com",
+        "avatar": "https://via.placeholder.com/60x60/F56565/FFFFFF?text=JW"
+      },
+      "frequency": "Weekly sessions",
+      "description": "Learn photography fundamentals including composition, lighting, and post-processing. Covers portrait, landscape, and street photography with both digital and film techniques.",
+      "category": "Art & Design",
+      "difficulty": "All Levels",
+      "duration": "10 weeks"
+    },
+    {
+      "id": "fitness-training",
+      "name": "Fitness Training",
+      "icon": "fas fa-dumbbell",
+      "timing": "Early mornings (6-7 AM)",
+      "maxStrength": 12,
+      "whoCanJoin": "All fitness levels",
+      "mentor": {
+        "name": "Sarah Martinez",
+        "contact": "sarah.fitness@skillswap.com",
+        "avatar": "https://via.placeholder.com/60x60/ED8936/FFFFFF?text=SM"
+      },
+      "frequency": "4 sessions per week",
+      "description": "Build strength, endurance, and flexibility through structured workout programs. Includes weight training, cardio, and mobility work tailored to individual fitness goals and abilities.",
+      "category": "Health & Fitness",
+      "difficulty": "All Levels",
+      "duration": "Ongoing"
+    }
+  ]
+}
