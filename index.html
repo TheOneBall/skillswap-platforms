@@ -83,12 +83,10 @@
     <section id="skills" class="popular-skills">
         <div class="container">
             <h2>Popular Skills on SkillSwap</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h4>Programming</h4>
-                    <span>234 teachers</span>
+            <div id="skills-grid" class="skills-grid">
+    <!-- Skills will be loaded dynamically -->
                 </div>
+
                 <div class="skill-item">
                     <i class="fas fa-language"></i>
                     <h4>Languages</h4>
@@ -139,6 +137,87 @@
     </div>
 </section>
 
+    <!-- Skill Details Modal -->
+<div id="skill-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close-button">&times;</span>
+            <div class="skill-header">
+                <i id="modal-icon" class="skill-icon"></i>
+                <h2 id="modal-title">Skill Name</h2>
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <div class="mentor-info">
+                <img id="mentor-avatar" src="" alt="Mentor" class="mentor-avatar">
+                <div class="mentor-details">
+                    <h3 id="mentor-name">Mentor Name</h3>
+                    <p id="mentor-contact">Contact Info</p>
+                </div>
+            </div>
+            
+            <div class="skill-details">
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Timing</strong>
+                            <p id="skill-timing">When sessions happen</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <strong>Max Participants</strong>
+                            <p id="skill-strength">How many can join</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-user-check"></i>
+                        <div>
+                            <strong>Who Can Join</strong>
+                            <p id="skill-requirements">Requirements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <strong>Frequency</strong>
+                            <p id="skill-frequency">How often</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-description">
+                    <h4>About This Skill</h4>
+                    <p id="skill-description">Full description will appear here</p>
+                </div>
+                
+                <div class="skill-meta">
+                    <span id="skill-category" class="skill-tag">Category</span>
+                    <span id="skill-difficulty" class="skill-tag">Difficulty</span>
+                    <span id="skill-duration" class="skill-tag">Duration</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="btn btn-primary" id="join-skill-btn">
+                <i class="fas fa-handshake"></i>
+                Express Interest
+            </button>
+            <button class="btn btn-secondary" id="contact-mentor-btn">
+                <i class="fas fa-envelope"></i>
+                Contact Mentor
+            </button>
+        </div>
+    </div>
+</div>
+
 
     <!-- Footer -->
     <footer>
@@ -148,6 +227,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="js/skill-popup.js"></script>
 </body>
 </html>
